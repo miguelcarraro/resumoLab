@@ -6,11 +6,13 @@
   #Módulo Conceitos iniciais de Cloud com Azure.
 
   #Localizando serviço por categoria;
+  
     Introdução de como localizar o tipo de serviço necessário;
     Familiarização com o ambiente de nuvem Azure;
 
   #Beneficios da computação em nuvem;
     #Alta Disponibilidade (SLA);
+    
       Sistema com recursos necessários sempre disponiveis;
       Garantia de disponibilidade, modelos SLA 99%, 99.9, 99.95%, etc;
       SLA (Service Level Agreement);
@@ -48,6 +50,7 @@
   
   
   #Tipos de serviços de nuvem;
+  
     IaaS (Infraestrucura como Serviço);
       Maior gestão;
       Maior controle;
@@ -67,7 +70,8 @@
 #Capitulo 2;
   #Arquitetura e Serviços Azure;
     
-    #Componentes de Arquitetura do Azure;
+  #Componentes de Arquitetura do Azure;
+  
       Regiões;
         Quando vamos criar um recurso é necessário escolher em qual região ele sera colocado;
         É necessário visualizar onde o seu recurso irá melhor se encaixar;
@@ -80,12 +84,14 @@
         Regiões são formadas por um conjunto de Datacenters;
         Ideal criação de um modelo de Desaster Recovery, utilizar outros DC's com o mesmo sistema que fica passivo             para que não seja perdida a funcionalidade caso aconteça um desastre;
 
-    #Pares de Regiões;
+  #Pares de Regiões;
+  
       No mínimo 300 milhas de separação entre pares de regiões;
       Replicação automática para alguns serviços;
       Recuperação de região priorizada em caso de interrupção;
 
-    #Regiões soberanas do Azure;
+  #Regiões soberanas do Azure;
+  
       Serviços Governamentais dos EUA;
         Atende às necessidades de segurança e conformidade das agências federais, governos estaduais e locais dos EUA e seus provedores de soluções;
         Azure Governamental;
@@ -98,7 +104,8 @@
         Fisicamente separada dos serviçoes de nuvem do Azure operados pela 21Vianet;
         Todos os dados permanecem dentro da China para garantir a conformidade;
 
-    #Recursos do Azure;
+  #Recursos do Azure;
+  
       #Grupo de recursos;
         Um amontoado de recursos que você tem para ter uma organização para saber onde locilizar o que precisa;
         Um grupo de recursos é um contêiner que você usa para gerenciar e agregar recursos em uma unica unidade;
@@ -116,7 +123,8 @@
           Bancos de dados SQL;
           Funções;
 
-      #Assinatura da Azure e Grupos de Gerenciamento;
+  #Assinatura da Azure e Grupos de Gerenciamento;
+  
         Uma conta Azure pode ser dividida em várias assinaturas uma para cada setor por exemplo;
           Posso ter uma assinatura do desenvolvimento;
           Assinatura para testes;
@@ -140,6 +148,137 @@
         Posso gerenciar configurações previas para assinaturas que correpondem a esse grupo;
         As assinaturas herdam as condições aplicadas do grupo de gerenciamento;
 
+#Módulo 2 Cap 2;
+  #Tipos de computação;
+  #Hospedagem de aplicativos;
+  #Redes virtuais;
+
+  #Computação em rede;
+  
+    Serviços de computação do Azure;
+      A computação do Azure é um serviço sob demanda que fornece recursos de computação, como discos, processadores, memória, rede e sistemas operacionais;
+
+  #Máquinas virtuais do Azure;
+
+    As máquinas virtuais do Azure (VMs) são emulações de software de computadores físicos;
+    Inclui processador virtual, memória, armazenamento e rede;
+    Oferta de IaaS que oferece personalização e controle total;
+    Tenho acesso a tudo menos ao hardware físico;
+
+
+  #Conjuntos de dimensionamento de VMs
+  
+      Os conjuntos de dimensionamento oferecem uma oportunidade de balanceamento de carga para dimensionar os recursos automaticamente;
+    
+    Conjuntos de disponibilidade de VMs
+      Domínio de falha;
+        O rack físico própriamente dito;
+      Domínio de atualização;
+        Sãos as VMs dentro dos Domínios de falha;
+        Idealmente usar varios Domínios de falhas para distribuir suas VMs;
+
+  Área de trabalho virtual do azure;
+
+    Está area é uma virtualização de área de trabalho e aplicativo executada na nuvem;
+    Cria um ambiente completo de virtualização da área de trabalho sem precisar executar outros servidores de gateway;
+    Reduz risco de que o recurso seja deixado para trás;
+    Implantações reais de várias sessões;
+    
+    Modelo Multisessão;
+      Varias pessoas acessam a mesma área de trabalho, porém, cada uma tem sua pasta para trabalho;
+
+    Modelo exclusivo;
+      Uma pessoa tem acesso a uma área de trabalho só para ela;
+
+  Serviços de contêineres do Azure;
+
+    Os contêineres do Azure fornecem um ambiente leve e virtualizado que não exige o gerenciamento do sistema operacional e pode responder a alterações sob demanda;
+    O contêiner é leve, pode ser recriado ou removido quando quiser;
+
+    Instâncias de Contêiner do Azure;
+      Uma oferta de PaaS que executa um contêiner ou pod de contêineres no Azure;
+
+    Aplicativos de Contêiner do Azure;
+      Uma oferta de PaaS, como instâncias de contêineres, que pode balancear a carga e escalar;
+
+    Serviço de Kubernetes do Azure (AKS);
+      Um serviço de orquestração para contêineres com arquiteturas distribuídas e grandes volumes de contêineres;
+
+  Azure Functions;
+
+    Oferta de PaaS que dá suporte a operações de computação sem servidor;
+
+    O código beseado em EVENTOS é executado quando chamado, sem exigir uma INFRAESTRUTURA DE SERVIDOR durante períodos inativos;
+
+    Função executada sempre que acontece algo, preciso de uma coisa acontecer para iniciar uma Azure Function;
+
+  Comparação de opções de computação do Azure;
+
+    VMs;
+      Servidor baseado em nuvem que dá suporte a ambientes Windows ou Linux;
+      Útil para migrações de lift-and-shift para nuvem;
+        Levar da forma que está;
+      Pacote do sistema operacional completo, incluindo o sistema operacional do host;
+
+    Área de trabalho virtual;
+      Fornece uma experiência de área de trabalho do Windows baseada em nuvem.
+      Aplicativos dedicados para conexão e uso ou acessíveis de qualquer navegador moderno;
+      Maior rastreabilidade sobre ações do usuário;
+
+      O logon de vários clientes permite que vários usuários façam logon no mesmo computador ao mesmo tempo;
+
+    Contêineres;
+      Ambiente leve e em miniatura adequado para a execução de microsserviços;
+      Projeto para escalabilidade e resiliência por meio da orquestração;
+
+      Os aplicativos e serviços são empacotados em contêiner que fica na parte superior do sistema operacional do host. Vários contêineres podem ficar em um sistema operacional do host;
+
+    Serviços de aplicativos do Azure;
+      Consistem e muma plataforma totalmente gerenciada para criar, implantar e dimencionar aplicativos Web e APIs rapidamente;
+      Trabalha com .NET, .Net Core, Node.js, Java, Python ou PHP;
+
+      Oferta de PaaS como requisitos de nível corporativo de desempenho, segurança e conformidade;
+
+    Serviços de rede do Azure;
+      Rede Virtual do Azure (VNet);
+        Permite que os recursos do Azure se comuniquem uns com os outros, com a Internet e com as redes locais;
+
+        Pontos de extremidade públicos, acessíveis de qualquer lugar na internet;
+
+        Pontos de extremidade privados, acessíveis somente dentro de sua rede;
+
+        As sub-redes virtuais segmentam sua rede para atenderàs suas necessidades;
+
+        O emparelhamento de rede conecta suas redes privadas diretamente;
+
+        Posso conectar meu ambiente físico ao virtual;
+        Vnets não estão linkadas por default, porém, nada me impede de conectar uma a outra, mas isso aumenta o risco de ataques laterais;
+
+
+      Gateway de VPN;
+        O gateway de VPN é usado para enviar tráfego criptografado entre uma rede virtual do Azure e uma no local pela Internet pública;
+
+      ExpressRoute;
+        Estende as redes locais para o Azure por meio de conexão privada para facilitar um provedor de conectividade;
+        É uma conexão direta de cabo entre o servidor físico e o Datacenter da Microsoft;
+        Opção cara, porem, muito segura e bem performatica;
+
+      DNS do Azure;
+        Confiabilidade e desempenho aproveitando uma rede global de servidores de nome DNS usando a rede Anycast;
+        A segurança do DNS do Azure baseia-se no gerenciador de recursos do Azure, habilitando o controle de acesso;
+
+    
+        
+
+        
+      
+  
+    
+    
+
+      
+
+      
       
 
 
