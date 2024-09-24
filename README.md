@@ -267,22 +267,117 @@
         Confiabilidade e desempenho aproveitando uma rede global de servidores de nome DNS usando a rede Anycast;
         A segurança do DNS do Azure baseia-se no gerenciador de recursos do Azure, habilitando o controle de acesso;
 
-    
+
+#Cap3: Armazenamento do Azure;
+
+  Contas de Armazenamento;
+
+    Deve ter um globalmente nome exclusivo;
+      Somente um nome para cada conta de armazenamento;
+      Pode receber diversos tipos de dados, sendo controlado da forma que o usuário quiser;
+      3 a 24 caracteres;
+      
+    Fornecese acesso à internet em todo mundo;
+    Determinar os serviços de armazenamento e as opções de redundancia;
+
+    Redundância de armazenamento;
+
+      LRS(armazenamento com redundância local);
+        Datacenter individual na região primária;
+        Duração de 11 noves (valor de disponibilidade);
+        3 cópias salvas no mesmo datacenter;
+        Indicado quando não será trabalho os dados com frequência;
+
+      ZRS(Armazenamento com redundância de zona);
+        Três zonas de disponibilidade na região primária;
+        12 noves (valor disponibilidade);
+        3 cópias salvas em 3 datacentes diferentes na região;
+        Indicado para operações que serão trabalhados os dados com constância;
+
+      GRS(armazenamento com redundância geográfica);
+        Datacenter único no primário e região secundária;
+        16 noves (valor de disponibilidade;
+
+      GZRS(Armazenamento com redundância de zona geográfica);
+        Três zonas de disponibilidade na região primária e um único datacenter na região secundária;
+        16 noves (valor de disponibilidade;
+
+  Serviços de armazenamento do Azure;
+
+    Blob do Azure;
+      Otimizado para armazenamento de quantidades massivas de dados NÂO ESTRUTURADOS, como textos ou dados binários;
+
+    Disco do Azure;
+      Fornece discos para Máquinas virtuais, aplicativos e outros serviços acessarem e utilizarem;
+
+    Fila do Azure;
+      Serviço de armazenamento de mensagens que fornece armazenamento e recuperação para grandes quantidades de mensagens, cada uma com até 64KB;
+
+    Arquivos do Azure;
+      Configura um compartilhamento de arquivos de rede altamente disponível que pode ser utilizado usando o protocolo Bloco de Mensagens do Servidor;
+
+    Tabelas do Azure;
+      Fornece uma opção de chave/atributo para o armazenamento de dados ESTRUTURADOS não relacionais com um design sem esquema;
+
+  Pontos de extremidades publicos do serviço de armazenamento;
+
+    Endereços de extremidade são;
+      Armazenamento de blob: https://<nome do armazenamento>.blob.core.windows.net;
+      Data lake Storage Gen2: https://<nome do armazenamento>.dfs.core.windows.net;
+      Arquivos do Azure: https://<nome do armazenamento>.file.core.windows.net;
+      Armazenamento de filas: https://<nome do armazenamento>.queue.core.windows.net;
+      Armazenamento Tabelas: https://<nome do armazenamento>.table.core.windows.net; 
+      
+  Camadas de acesso de armazenamento do Azure;
+
+    Frequente;
+      O tempo todo acessado;
+      
+    Esporádico;
+      Otimizado para dados com pouca frequência de acesso 30 dias;
+
+    Frio;
+      Dados com pouco acesso, acessados por pelo menos 90 dias;
+
+    Arquivo morto;
+      Acessados quase nunca, armazenados por pelo menos 180 dias;
+
+  Migrações para o Azure;
+
+    Plataforma de migração unificada;
+    Intervalo de ferramentos integradas e autônomas;
+    Avaliação e migração;
+
+    Azure Data Box;
+      Possivel levar até 80 TB de dados;
+      Máquina física para levar dados rápidos;
+      Mova os backups de recuperação de desastre para o Azure;
+      Proteja seus dados em uma caixa robusta durante o trânsito;
+      Usado para movimentações robustas de dados;
+      Migre dados do Azure para conformidade ou necessidades regulatórias;
+      Migre dados para o Azure de locais remotos com conectividade limitada ou sem conectividade;
+
+    Opções de gerenciamento de arquivos;
+
+      AzCopy;
+        Utilitário de linha de comando;
+        Copiar blobs ou arquivos de ou para sua conta de armazenamento;
+        Sincronização em uma direção;
+
+      Gerenciador de Armazenamento do Azure;
+        Interface gráfica do usuário (de modo semelhante ao Windows Explorer);
+        Compatível com o Windows, MacOS e Linux;
+
+      Sincronização de Arquivos do Azure;
+        Sincroniza os arquivos do Azure e locais de forma BIDIRECIONAL, vai e vem dados;
+
+        A camada de nuvem mantém os arquivos acessados com frequência no local, enquanto libera espaço;
         
 
-        
-      
-  
-    
     
 
-      
+    
+    
+    
 
-      
-      
-
-
-
-
-        
         
