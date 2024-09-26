@@ -373,11 +373,104 @@
 
         A camada de nuvem mantém os arquivos acessados com frequência no local, enquanto libera espaço;
         
+#Cap 3 Identidade, Acesso e Segurança;
+
+  #Identidae, acesso e segurança: domínio de objetivo;
+  
+    Descrever as identidades externas e o acesso de convidado no Azure;
+    Descrever o Acesso Condicional do Entra;
+    Descrever o controle de acesso baseado em função (RBAC);
+    Descrever o conceito de Confiança Zero;
+    Descrever a finalidade do modelo de defesa em profundidade;
+    Descrever a finalidade do Microsoft Defender para Nuvem;
+
+  ID do Microsoft Entra (Entra ID)
+
+    O Microsoft Entra ID é o serviço de gerenciamento de identidades e acesso baseado em nuvem do Microsoft Azure;
+    Substitui aos poucos o Active Directory;
+    Valida se o seus dados de acessos estão corretos;
+
+    Autenticação (os funcionários entram para acessar os recursos);
+    Logon único (SSO);
+      Um único login feito por sessão, não necessário ser recolocado os seus dados novamente, agilizando o workflow;
+    Gerenciamento de aplicativos;
+    Negócios para Negócios (B2B);
+      Não necessário que o usuário faça o cadastro comigo, caso ele tenha conta e seja validado por exemplo no Gmail, eu aceito o login dele sendo feito pelo Gmail;
+    Gerenciamento de dispositivos;
+
+  Microsoft Entra Domain Services;
+
+    Obtenha os benefícios dos serviços de domínio baseados em nuvem sem gerenciar os controladores de domínio;
+    Execute aplicativos herdados (que não podem utilizar os padrões de autenticação modernos) na nuvem;
+    Sincronizar automaticamente a partir do Microsoft Entra ID;
+
+  Comparação Autenticação e Autorização;
+
+    Autenticação;
+      Identifica a pessoa ou serviço buscando acesso a um recurso;
+      Solicita credenciais de acesso legítimo;
+      Base para criar princípios de identidade e controle de acesso seguro;
+
+      Dizer ao Azure que posso entrar no Azure da empresa, porém, nem tudo está liberado para mim;
+
+    Autorização;
+      Determina o nível de acesso de uma pessoa ou serviço autenticado;
+      Define quais dados eles podem acessar e o que podem fazer com eles;
+     ----------------------------------------------------------------------
+    Autentificação multifator (MFA);
+      Fornece segurança adicional para as identidades, exigindo dois ou mais elementos para autentificação completa;
+      Solicita algo que você sabe, depois algo que você possui e algo que você é;
+    ----------------------------------------------------------------------------------------------
+    B2B do Microsoft Entra External ID;
+      Colaboração B2B;
+        Parceiros, fornecedores, outros colaboradores;
+        Recebem convite ou inscrição para autoatendimento;
+        Conseguem acesso com base ao ID externo do Microsoft Entra;
+
+    B2C do Identidades Externas do Azure AD;
+      Consumidores do seu aplicativo publicado,
+      Fluxo dos usuários de inscrição e entrada, políticas personalizadas;
+      exemplo: logar na plataforma usando Gmail;
+    ------------------------------------------------------------------------------------------------
+
+    Acesso Condicional;
+      Associação de usuário ou grupo;
+      Local do IP;
+      Dispositivo;
+      Aplicativo;
+      Detecção de risco;
+
+      Verificação se o colaborador está seguindo um padrão de uso costumeiro;
+
+    Controle de acesso beseado em função (RBAC);
+      Gerenciamento de acesso de granularidade fina;
+      Divida as tarefas dentro da equipe e conceda somente a quantidade de acesso de que os usuários precisam para trabalhar;
+      Habilite o acesso ao portal do Azure e o controle de acesso aos recursos;
+      Acessos são herdados, se dou acesso em um recurso mais alto, os recursos abaixo dele terão o mesmo acesso;
+
+    Confiança Zero;
+      Proteja os ativos onde eles estiverem;
+      Colocar a maior quantidade de camadas de segurança;
+
+      Proteção completa (ordem mais importante ao menos importante);
+        Dados, Aplicativo, Computação, Rede, Perímetro, Identidade e acesso, Segurança física;
+        Apesar da ordem todos são extremamente importantes;
+
+        Uma abordagem em camadas para proteger sistemas de computador;
+        Fornece vários níveis de proteção;
+        Ataques contra uma camada são isolados das camadas subsequentes;
+
+    Microsoft Defender para Nuvem;
+      O Microsoft Defender para Nuvem é um serviço de monitoramento que fornece proteção contra ameaças nos datacenters do Azure e locais;
+      Faz comunicação com AWS e GCP;
+      Traz estratégias de ação;
+      Fornece recomendações de segurança;
+      Detectar e bloquear malware;
+      Analisar e identificar ataques potencias;
+      Controle de acesso just-in-time para portas;
+    
 
     
 
-    
-    
-    
 
-        
+    
