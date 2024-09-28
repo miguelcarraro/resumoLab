@@ -568,8 +568,35 @@
       Classificação de dados confidenciais;
       Linhagem de dados de ponta a ponta, quem tem acesso a tal dado;
 
-    
-    
+  Ferramentas de gerenciamento e implantação do Azure;  
+
+    Portal, PowerShell, CLI e outras;
+    Azure Arc e Azure Resource Manager;
+
+    Azure Arc;
+      Posso fazer a gestão de recursos que estão fora do Azure em outras nuvens ou outras coisas;
+
+    ARM ( Azure REsource Manager)
+      Fornece uma camada de gerenciamento que permite criar, atualizar e excluir recursos na assinatura do Azure;
+      Adequa os seus comandos para que seja compreendido e distribuido no Azure;
+      Infraestrutura como código;
+        Garanta consistência na implantação em todo o ecossistema de nuvem;
+        Gerencia a configuração em escala;
+        Provisione rapidamente ambientes adicionais como base em uma configuração e um build padrão
+
+    Modelos do ARM;
+      São arquivos JSON(JavaScript Object Notation) que podem ser usados para criar e implantar a infraestrutura do Azure sem a necessidade de escrever comandos de programação;
+      Requisitos;
+        Sintaxe declarativa;
+        Resultados repetíveis;
+        Orquestração;
+        Arquivos modulares;
+        Validação integrada;
+        Código exportável;
+
+    Bicep;
+      Linguagem nativa do Azure;
+      Linguagem mais amigavel para facilitar a vida de quem está aprendendo a automatizar produção de infra, etc.;
 
     
     
