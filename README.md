@@ -540,6 +540,34 @@
       Ou seja são de EXTREMA importância principalmente em operações de grande escala;
       
     
+#Capitulo de Governança;
+
+  Governança e conformidade;
+
+    Blueprints, políticas e bloqueios de recursos;
+    Portal de Confiança do Serviço;
+
+    Azure Policy;
+      O Azure Policy ajuda a impor padrões organizacionais e a avaliar a conformidade em escala;
+      Ele fornece governança e consistência de recursos com conformidade regulatória, segurança, custo e gerenciamento;
+      Regra acima de qualquer permissionamento, deve ser respeitada até pelo dono da assinatura;
+      Avalia e identifica os recursos do Azure que não atendem às suas políticas;
+      Fornece definições de políticas e iniciativas integradas, em categorias como armazenamento, rede, computação, central de segurança e monitoramento;
+
+    Bloqueios de Recursos;
+      Proteja os recursos do Azure de exclusão ou modificação acidental;
+      Gerenciar bloqueios na assinatura, grupo de recursos ou níveis de recursos individuais dentro do Portal do Azure;
+      Se eu coloco um bloqueio em um Grupo de recursos tudo o que estiver dentro dele herdará esse bloqueio;
+
+    Portal de Confiança do Serviço;
+      Local onde podemos localizar protocolos, regras, etc da Microsoft;
+
+    Microsoft Purview;
+      É uma família de soluções de governança, risco e conformidade de dados que ajuda você a obter uma única exibição unificada em seus dados. O Microsoft Purview reúne insights sobre seus dados locais, multinuvem e de software como serviço;
+      Descoverta de daos automatizada;
+      Classificação de dados confidenciais;
+      Linhagem de dados de ponta a ponta, quem tem acesso a tal dado;
+
     
     
 
