@@ -576,7 +576,7 @@
     Azure Arc;
       Posso fazer a gestão de recursos que estão fora do Azure em outras nuvens ou outras coisas;
 
-    ARM ( Azure REsource Manager)
+    ARM ( Azure Resource Manager)
       Fornece uma camada de gerenciamento que permite criar, atualizar e excluir recursos na assinatura do Azure;
       Adequa os seus comandos para que seja compreendido e distribuido no Azure;
       Infraestrutura como código;
@@ -598,8 +598,31 @@
       Linguagem nativa do Azure;
       Linguagem mais amigavel para facilitar a vida de quem está aprendendo a automatizar produção de infra, etc.;
 
-    
-    
+#Ferramentas de Monitoramento do Azure;
+
+  Ferramentas essas:
+
+    Assistente do Azure;
+      Analisa recursos implantados do Azure e faz RECOMENDAÇÕES com base nas práticas recomendadas para otimizar as implantações do Azure;
+      Confiabilidade;
+      Segurança;
+      Desempenho;
+      Custo;
+      Excelência Operacional;
+
+    Azure Monitor;
+      Maximiza a disponibilidade e o desempenho de aplicativos e serviços coletando, analisando e tomando decisões com base na telemetria da nuvem e de ambientes locais;
+
+    Integridade dos serviços do Azure;
+      É uma coleção de serviços que mantêm você informado sobre os status do Azure, status de serviços que podem afetar você e o status de recurso específico que está afetando você;
+      Informativo sobre o que ira acontecer com seus recursos utilizados;
+      Status do Azure;
+        Visão global da integridade de todos os serviços do Azure em todas as regiões do Azure;
+      Integridade do serviço é uma exibição focada apenas nos serviços e regiões que você está usando. Se um serviço estiver engrantando um problema em uma região que você não está usando ele não ira ser apontado aqui;
+      Resource Health;
+        Exibição personalizada dos recursos reais do Azure. Ele fornece informações sobre integridade de seus recursos de nuvem individuais;
+        
+  
 
 
     
